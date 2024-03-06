@@ -17,14 +17,19 @@
     font-family: 'Arial', sans-serif;
   }
   
-  /* The signup-page will be used to wrap the signup-container and provide additional styling if needed */
   .signup-page {
-    width: 100%;
-    min-height: 100vh; /* Minimum height to cover the viewport height */
-    display: flex; /* Use flexbox for easy centering */
-    justify-content: center; /* Center horizontally */
-    align-items: center; /* Center vertically */
-    position: relative; /* Context for absolute positioning */
+    display: flex;
+    flex-direction: column; /* Stack children vertically */
+    justify-content: center; /* Center vertically */
+    align-items: center; /* Center horizontally */
+    min-height: 100vh;
+  }
+  
+  /* Adjust the .signup-logo to make sure it's centered above the form */
+  .signup-logo {
+    width: 150px; /* Adjust the width as needed */
+    height: auto;
+    margin-bottom: 50px; /* Increase the space below the logo if needed */
   }
   
   /* Styling for the container of the sign-up form */
@@ -88,3 +93,9 @@
     font-size: 14px;
   }
   
+  /* Style for the logo at the top of the sign-up form */
+.signup-logo {
+  width: 120px; /* Set the width as desired */
+  height: auto; /* Maintain aspect ratio */
+  margin-bottom: 30px; /* Space between the logo and the form */
+}

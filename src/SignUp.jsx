@@ -12,29 +12,36 @@ function SignUp() {
   };
 
   return (
-    <div className="signup-container">
-      <form onSubmit={handleSubmit} className="signup-form">
-        <h2>CREATE AN ACCOUNT</h2>
-        <p>Create an account to access all the features for free!</p>
-        <input
-          type="email"
-          placeholder="Email Address"
-          value={email}
-          onChange={(e) => setEmail(e.target.value)}
-          required
-        />
-        <input
-          type="password"
-          placeholder="Password"
-          value={password}
-          onChange={(e) => setPassword(e.target.value)}
-          required
-        />
-        <button type="submit">Create Account</button>
-        <p>
-          Already have an account? <a href="/signin">Sign in</a>
-        </p>
-      </form>
+    <div className="signup-page">
+      <img
+        src="https://upload.wikimedia.org/wikipedia/en/thumb/e/ec/San_Jose_State_Spartans_logo.svg/1200px-San_Jose_State_Spartans_logo.svg.png"
+        alt="San Jose State Spartans Logo"
+        className="signup-logo"
+      />
+      <div className="signup-container">
+        <form onSubmit={handleSubmit} className="signup-form">
+          <h2>CREATE AN ACCOUNT</h2>
+          <p>Create an account to access all the features for free!</p>
+          <input
+            type="email"
+            placeholder="Email Address"
+            value={email}
+            onChange={(e) => setEmail(e.target.value)}
+            required
+          />
+          <input
+            type="password"
+            placeholder="Password"
+            value={password}
+            onChange={(e) => setPassword(e.target.value)}
+            required
+          />
+          <button type="submit">Create Account</button>
+          <p>
+            Already have an account? <a href="/signin">Sign in</a>
+          </p>
+        </form>
+      </div>
     </div>
   );
 }
