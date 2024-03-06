@@ -1,38 +1,79 @@
-.signup-container {
+/* Global styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  html, body {
+    height: 100%; /* Make sure the html and body cover the full height of the viewport */
+  }
+  
+  body {
+    background-color: white; /* Set the background color of the page to white */
+    display: flex;
+    justify-content: center;
+    align-items: center; /* Center children elements */
+    font-family: 'Arial', sans-serif;
+  }
+  
+  /* The signup-page will be used to wrap the signup-container and provide additional styling if needed */
+  .signup-page {
+    width: 100%;
+    min-height: 100vh; /* Minimum height to cover the viewport height */
+    display: flex; /* Use flexbox for easy centering */
+    justify-content: center; /* Center horizontally */
+    align-items: center; /* Center vertically */
+    position: relative; /* Context for absolute positioning */
+  }
+  
+  /* Styling for the container of the sign-up form */
+  .signup-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
     max-width: 400px;
-    margin: 0 auto;
     padding: 50px;
     background-color: white;
-    border-radius: 8px;
+    border-radius: 15px;
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
   }
   
+  /* Form heading styles */
   .signup-form h2 {
-    text-align: center;
-    margin-bottom: 20px;
-  }
-  
-  .signup-form p {
-    text-align: center;
-    margin-bottom: 20px;
-  }
-  
-  .signup-form input {
-    display: block;
-    width: 100%;
-    padding: 10px;
+    font-size: 24px;
+    color: #333;
     margin-bottom: 10px;
-    border-radius: 5px;
-    border: 1px solid #ccc;
   }
   
-  .signup-form button {
-    width: 100%;
+  /* Paragraph styles */
+  .signup-form p {
+    font-size: 16px;
+    color: #666;
+    margin-bottom: 30px;
+  }
+  
+  /* Input field styles */
+  .signup-form input {
+    width: calc(100% - 20px);
     padding: 10px;
+    margin-bottom: 20px;
+    border-radius: 20px;
+    border: 1px solid #ddd;
+    font-size: 16px;
+  }
+  
+  /* Button styles */
+  .signup-form button {
+    width: calc(100% - 20px);
+    padding: 10px;
+    margin-top: 10px;
+    border-radius: 20px;
     border: none;
-    border-radius: 5px;
     background-color: #007bff;
     color: white;
+    font-size: 16px;
     cursor: pointer;
   }
   
@@ -40,8 +81,10 @@
     background-color: #0056b3;
   }
   
+  /* Link styles */
   .signup-form a {
     color: #007bff;
     text-decoration: none;
+    font-size: 14px;
   }
   
