@@ -1,0 +1,45 @@
+.login-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 100vh;
+    background-color: #004880; /* This is the blue background color */
+  }
+  
+  .login-content {
+    width: 50%;
+    padding: 2rem;
+    color: white;
+  }
+  
+  .login-logo {
+    width: 120px;
+    height: auto;
+    display: block;
+    margin: 0 auto;
+  }
+  
+  .login-form input,
+  .login-form button {
+    display: block;
+    width: 100%;
+    margin: 0.5rem 0;
+  }
+  
+  .login-form button {
+    background-color: #007bff;
+    color: white;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+  }
+  
+  .login-graphic {
+    width: 50%;
+    /* Setup the graphic as a background image if you have one */
+    background: url('path-to-your-graphic.png') no-repeat center center;
+    background-size: cover;
+  }
+  
+  /* Add other styles as needed based on your image */
+  
