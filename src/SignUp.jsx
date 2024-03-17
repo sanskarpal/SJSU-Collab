@@ -38,7 +38,7 @@ function SignUp() {
           />
           <button type="submit">Create Account</button>
           <p>
-            Already have an account? <a href="/signin">Sign in</a>
+            Already have an account? <a href="/signup">Sign in</a>
           </p>
         </form>
       </div>
