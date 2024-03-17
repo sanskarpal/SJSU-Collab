@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
-import './LoginPage.css'; // This will be your CSS file for the LoginPage
+import { Link } from 'react-router-dom';
+import './LoginPage.css';
 
 function LoginPage() {
   const [username, setUsername] = useState('');
@@ -7,43 +8,26 @@ function LoginPage() {
 
   const handleLogin = (event) => {
     event.preventDefault();
-    // Implement your login logic here
     console.log('Login with:', username, password);
   };
 
   return (
-    <div className="login-container">
-      <div className="login-content">
-        <img
-          src="https://upload.wikimedia.org/wikipedia/en/thumb/e/ec/San_Jose_State_Spartans_logo.svg/1200px-San_Jose_State_Spartans_logo.svg.png"
-          alt="SJSU Spartans Logo"
-          className="login-logo"
-        />
-        <h1>Welcome Back!</h1>
+    <div className="container">
+      <div className="login-form">
+        <img className="sjsu_logo" src="https://upload.wikimedia.org/wikipedia/en/thumb/e/ec/San_Jose_State_Spartans_logo.svg/1200px-San_Jose_State_Spartans_logo.svg.png" alt="SJSU Logo" />
+        <h2>Welcome Back!</h2>
         <p>Discover a space where diverse talents merge seamlessly. Get started for free.</p>
-        <form onSubmit={handleLogin} className="login-form">
-          <input
-            type="text"
-            placeholder="Username"
-            value={username}
-            onChange={(e) => setUsername(e.target.value)}
-            required
-          />
-          <input
-            type="password"
-            placeholder="Password"
-            value={password}
-            onChange={(e) => setPassword(e.target.value)}
-            required
-          />
+        <form id="loginForm" onSubmit={handleLogin}>
+          <input type="text" id="username" placeholder="Username" value={username} onChange={(e) => setUsername(e.target.value)} required />
+          <input type="password" id="password" placeholder="Password" value={password} onChange={(e) => setPassword(e.target.value)} required />
           <button type="submit">Login</button>
         </form>
-        <p>
-          Not a member? <a href="/signup">Register Now</a>
-        </p>
+        <p>Not a member? <Link to="/signup">Register Now</Link></p>
       </div>
-      <div className="login-graphic">
-        {/* Include your graphic here as an img tag or as a background in CSS */}
+      <div className="welcome-back">
+        <h1>Spartan Collab</h1>
+        <p>Where Talents Merge, Projects Emerge.</p>
+        <img className="login_logo" src="https://upload.wikimedia.org/wikipedia/en/thumb/e/ec/San_Jose_State_Spartans_logo.svg/1200px-San_Jose_State_Spartans_logo.svg.png" alt="Collab Logo" />
       </div>
     </div>
   );

@@ -1,45 +1,69 @@
-.login-container {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    height: 100vh;
-    background-color: #004880; /* This is the blue background color */
+body, html {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+  font-family: Arial, sans-serif;
+  background-color: #eaeaea; /* Set the default background */
+}
+
+.container {
+  display: flex;
+  min-height: 100vh;
+  max-width: 100vw; /* Ensure the container doesn't exceed the viewport width */
+  overflow-x: hidden; /* Prevent horizontal scrollbar */
+}
+
+.login-form,
+.welcome-back {
+  flex: 1; /* Each takes half the space */
+}
+
+.login-form {
+  background-color: #eaeaea; /* Gray background for the login form */
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+}
+
+.login-form-inner {
+  max-width: 300px; /* Your content's max width */
+}
+
+.welcome-back {
+  background-color: #0055A2; /* Blue background for the welcome back section */
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 0px;
+}
+
+.welcome-back-inner {
+  max-width: 300px; /* Your content's max width */
+}
+
+/* Additional styles for logos and responsive behavior */
+.sjsu_logo,
+.login_logo {
+  max-width: 100px; /* Adjust as needed */
+  height: auto; /* Maintain aspect ratio */
+}
+
+@media (max-width: 768px) {
+  .container {
+    flex-direction: column;
   }
-  
-  .login-content {
-    width: 50%;
-    padding: 2rem;
-    color: white;
+
+  .login-form,
+  .welcome-back {
+    width: 100%; /* Full width for smaller screens */
+    padding: 20px;
   }
-  
-  .login-logo {
-    width: 120px;
-    height: auto;
-    display: block;
-    margin: 0 auto;
+
+  .sjsu_logo,
+  .login_logo {
+    max-width: 150px; /* Adjust as needed for smaller screens */
   }
-  
-  .login-form input,
-  .login-form button {
-    display: block;
-    width: 100%;
-    margin: 0.5rem 0;
-  }
-  
-  .login-form button {
-    background-color: #007bff;
-    color: white;
-    padding: 10px;
-    border: none;
-    border-radius: 5px;
-  }
-  
-  .login-graphic {
-    width: 50%;
-    /* Setup the graphic as a background image if you have one */
-    background: url('path-to-your-graphic.png') no-repeat center center;
-    background-size: cover;
-  }
-  
-  /* Add other styles as needed based on your image */
-  
+}
