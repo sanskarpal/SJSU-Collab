@@ -1,4 +1,5 @@
 import React, { useState } from 'react';
+import { Link } from 'react-router-dom'; // Import the Link component
 import './SignUp.css'; // Make sure the path is correct based on where you place your CSS file
 
 function SignUp() {
@@ -38,7 +39,7 @@ function SignUp() {
           />
           <button type="submit">Create Account</button>
           <p>
-            Already have an account? <a href="/signup">Sign in</a>
+            Already have an account? <Link to="/login">Sign in</Link>
           </p>
         </form>
       </div>
