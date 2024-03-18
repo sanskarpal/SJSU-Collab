@@ -20,7 +20,7 @@ function LoginPage() {
         <form id="loginForm" onSubmit={handleLogin}>
           <input type="text" id="username" placeholder="Username" value={username} onChange={(e) => setUsername(e.target.value)} required />
           <input type="password" id="password" placeholder="Password" value={password} onChange={(e) => setPassword(e.target.value)} required />
-          <button type="submit">Login</button>
+          <button type="submit" id="submit">Login</button>
         </form>
         <p>Not a member? <Link to="/signup">Register Now</Link></p>
       </div>
