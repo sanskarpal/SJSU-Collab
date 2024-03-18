@@ -1,4 +1,5 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 import './HomePage.css'; // Make sure to create and import your HomePage.css
 
 const HomePage = () => {
@@ -19,6 +20,7 @@ const HomePage = () => {
             <a href="#">View Profile</a>
             <a href="#">Settings</a>
             <a href="#">Logout</a>
+            <p><Link to="/signup">Create an Account</Link></p>
           </div>
         </div>
       </header>
