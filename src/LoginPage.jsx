@@ -28,7 +28,7 @@ function LoginPage() {
       <div className="welcome-back">
         <h1>Spartan Collab</h1>
         <p>Where Talents Merge, Projects Emerge.</p>
-        <img className="login_logo" src="https://upload.wikimedia.org/wikipedia/en/thumb/e/ec/San_Jose_State_Spartans_logo.svg/1200px-San_Jose_State_Spartans_logo.svg.png" alt="Collab Logo" />
+        <img className="login_logo" src="src/groupworkLogo.png" alt="Collab Logo" />
       </div>
     </div>
   );
