@@ -48,10 +48,13 @@ body, html {
 }
 
 /* Additional styles for logos and responsive behavior */
-.sjsu_logo,
-.login_logo {
+.sjsu_logo{
   max-width: 100px; /* Adjust as needed */
   height: auto; /* Maintain aspect ratio */
+}
+.login_logo{
+  max-width: 300px;
+  height: auto;
 }
 
 @media (max-width: 768px) {
