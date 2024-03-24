@@ -19,13 +19,13 @@
 }
 
 .profile-page .logo {
-    margin-left: 20px;
     display: flex;
     align-items: center;
 }
 
 .profile-page .logo img {
-    height: 50px;
+    height: 30px;
+
 }
 
 .profile-page header nav {
