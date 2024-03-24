@@ -15,10 +15,9 @@ const HomePage = () => {
       <header>
         <img src="https://upload.wikimedia.org/wikipedia/en/thumb/e/ec/San_Jose_State_Spartans_logo.svg/1200px-San_Jose_State_Spartans_logo.svg.png" alt="SJSU Logo" className="logo" />
         <div className="dropdown">
-          <button className="dropbtn">Profile</button>
+          <button className="dropbtn"><img id="profile-image" src = "https://steamuserimages-a.akamaihd.net/ugc/2061007234587149642/02CD559FA7BBA7C9593CAFE36AD342052579587F/?imw=512&&ima=fit&impolicy=Letterbox&imcolor=%23000000&letterbox=false"></img></button>
           <div className="dropdown-content">
-            <a href="#">View Profile</a>
-            <a href="#">Settings</a>
+            <p><Link to="/profile">View Profile</Link></p>
             <a href="#">Logout</a>
             <p><Link to="/login">Sign In</Link></p>
           </div>

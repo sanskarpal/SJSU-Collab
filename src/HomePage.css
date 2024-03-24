@@ -24,16 +24,16 @@ body {
     right: 10px;
     top: 5px;
   }
-  
-  .dropbtn {
-    background-color: #004880;
-    color: white;
-    padding: 10px 15px;
-    font-size: 16px;
-    border: none;
-    cursor: pointer;
-    border-radius: 5px;
+
+  .dropbtn{
+    background-color: transparent;
+    border-color: transparent;
   }
+
+  #profile-image{
+    border-radius: 40px;
+  }
+ 
   
   .dropdown-content {
     display: none;

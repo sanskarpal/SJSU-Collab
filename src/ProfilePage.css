@@ -71,6 +71,7 @@
 .profile-page .profile-container img {
     width: auto;
     height: 150px;
+    border-radius: 40px
 }
 
 .profile-page .profile-container input,
