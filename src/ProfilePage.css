@@ -1,0 +1,93 @@
+.profile-page {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    margin: 0;
+    padding: 0;
+    height: 100vh; /* Full height of the viewport */
+}
+
+.profile-page header {
+    background-color: #005A8B;
+    padding: 10px 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    z-index: 100;
+}
+
+.profile-page .logo {
+    margin-left: 20px;
+    display: flex;
+    align-items: center;
+}
+
+.profile-page .logo img {
+    height: 50px;
+}
+
+.profile-page header nav {
+    margin-right: 20px;
+}
+
+.profile-page header nav ul {
+    list-style-type: none;
+    display: flex;
+    margin: 0;
+    padding: 0;
+}
+
+.profile-page header nav ul li {
+    margin-left: 20px;
+}
+
+.profile-page header nav ul li a {
+    color: white;
+    text-decoration: none;
+}
+
+.profile-page main {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-top: 60px; /* Height of the header */
+    margin-top: 60px; /* Push the main content down */
+    height: calc(100vh - 60px); /* Height minus the header */
+}
+
+.profile-page .profile-container {
+    background-color: #0077B6;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    width: 350px;
+    margin-top: auto;
+    margin-bottom: auto;
+    text-align: center; /* Center text and inline elements */
+}
+
+.profile-page .profile-container img {
+    width: auto;
+    height: 150px;
+}
+
+.profile-page .profile-container input,
+.profile-page .profile-container button {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+    border-radius: 5px;
+    border: none;
+}
+
+.profile-page .profile-container button {
+    background-color: #eab239;
+    color: white;
+    cursor: pointer;
+}
+
+.profile-page .profile-container button:hover {
+    background-color: #c08301;
+}
