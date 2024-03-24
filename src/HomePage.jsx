@@ -20,7 +20,7 @@ const HomePage = () => {
             <a href="#">View Profile</a>
             <a href="#">Settings</a>
             <a href="#">Logout</a>
-            <p><Link to="/signup">Create an Account</Link></p>
+            <p><Link to="/login">Sign In</Link></p>
           </div>
         </div>
       </header>
