@@ -2,9 +2,21 @@ body {
     font-family: Arial, sans-serif;
     background-color: #f4f4f4;
     margin: 0;
+    padding: 0;
+    height: 100%;
   }
+
+main{
+  padding-top: 60px; 
+  margin-top: 50px; 
+  min-height: calc(100vh - 50px); 
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start; 
+}
   
   header {
+    display: flex;
     background-color: #004880;
     color: white;
     padding: 10px 0;
@@ -16,7 +28,13 @@ body {
   }
   
   header img {
-    height: 50px;
+    height: 45px;
+  }
+
+  #homepageLogo{
+    height: 30px;
+    display: flex;
+    align-self: center;
   }
   
   .dropdown {
