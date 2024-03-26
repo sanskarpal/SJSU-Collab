@@ -1,14 +1,25 @@
-import React from 'react';
+
 import { Link } from 'react-router-dom';
 import './HomePage.css'; // Make sure to create and import your HomePage.css
+import { useState } from 'react';
+
 
 const HomePage = () => {
   // Placeholder for post data
-  const posts = [
+  const [posts, setPosts] = useState([
     { title: 'Post Title 1', content: 'Post content goes here...' },
     { title: 'Post Title 2', content: 'Another post content...' },
     // Add more posts as needed
-  ];
+  ]);
+
+  const [newPost, setNewPost] = useState({ title: '', content: '' });
+
+  const handleCreatePost = () => {
+    if (newPost.title && newPost.content) {
+      setPosts([...posts, newPost]);
+      setNewPost({ title: '', content: '' }); // Reset new post state
+    }
+  };
 
   return (
     <div>
@@ -26,7 +37,19 @@ const HomePage = () => {
       </header>
 
       <main>
-        <button className="new-post-button">Create a Post</button>
+        <input
+          type="text"
+          placeholder="Title"
+          value={newPost.title}
+          onChange={(e) => setNewPost({ ...newPost, title: e.target.value })}
+        />
+        <textarea
+          placeholder="Content"
+          value={newPost.content}
+          onChange={(e) => setNewPost({ ...newPost, content: e.target.value })}
+        ></textarea>
+        <button className="new-post-button" onClick={handleCreatePost}>Create a Post</button>
+        
         {posts.map((post, index) => (
           <div className="post" key={index}>
             <h3>{post.title}</h3>
