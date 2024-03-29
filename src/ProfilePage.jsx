@@ -11,7 +11,7 @@ function ProfilePage() {
           <h1>SJSU COLLAB</h1>
         </div>
         <div className="dropdown">
-          <button className="dropbtn"><img id="profile-image" src = "https://steamuserimages-a.akamaihd.net/ugc/2061007234587149642/02CD559FA7BBA7C9593CAFE36AD342052579587F/?imw=512&&ima=fit&impolicy=Letterbox&imcolor=%23000000&letterbox=false"></img></button>
+          <button className="dropbtn"><img id="profile-image" src = "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRzdWHcffKPDbUMWEVLor3x7sknODQ7SP-Qmw&usqp=CAU"></img></button>
           <div className="dropdown-content">
             <p><Link to="/">Home</Link></p>
             <a href="#">Logout</a>
@@ -21,7 +21,7 @@ function ProfilePage() {
 
       <main>
         <div className="profile-container">
-          <img src="https://steamuserimages-a.akamaihd.net/ugc/2061007234587149642/02CD559FA7BBA7C9593CAFE36AD342052579587F/?imw=512&&ima=fit&impolicy=Letterbox&imcolor=%23000000&letterbox=false" alt="User Avatar" />
+          <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRzdWHcffKPDbUMWEVLor3x7sknODQ7SP-Qmw&usqp=CAU" alt="User Avatar" />
           <form>
             <input type="text" placeholder="Username" />
             <input type="email" placeholder="Email address" />
