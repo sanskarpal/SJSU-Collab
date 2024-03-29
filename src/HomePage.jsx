@@ -27,7 +27,7 @@ const HomePage = () => {
         <img id="homepageLogo" src="https://upload.wikimedia.org/wikipedia/en/thumb/e/ec/San_Jose_State_Spartans_logo.svg/1200px-San_Jose_State_Spartans_logo.svg.png" alt="SJSU Logo" />
         <h1>SJSU COLLAB</h1>
         <div className="dropdown">
-          <button className="dropbtn"><img id="profile-image" src = "https://steamuserimages-a.akamaihd.net/ugc/2061007234587149642/02CD559FA7BBA7C9593CAFE36AD342052579587F/?imw=512&&ima=fit&impolicy=Letterbox&imcolor=%23000000&letterbox=false"></img></button>
+          <button className="dropbtn"><img id="profile-image" src = "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRzdWHcffKPDbUMWEVLor3x7sknODQ7SP-Qmw&usqp=CAU"></img></button>
           <div className="dropdown-content">
             <p><Link to="/profile">Profile</Link></p>
             <p><Link to="/login">Sign In</Link></p>
@@ -38,12 +38,14 @@ const HomePage = () => {
 
       <main>
         <input
+          id="postTitle"
           type="text"
           placeholder="Title"
           value={newPost.title}
           onChange={(e) => setNewPost({ ...newPost, title: e.target.value })}
         />
         <textarea
+          id="postContent"
           placeholder="Content"
           value={newPost.content}
           onChange={(e) => setNewPost({ ...newPost, content: e.target.value })}

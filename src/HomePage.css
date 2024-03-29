@@ -142,46 +142,56 @@ main{
     background-color: #f4f4f4;
   }
   
-  /* form {
-    max-width: 500px;
-    margin: 30px auto;
-    padding: 20px;
-    background: #fff;
-    border-radius: 8px;
-    box-shadow: 0 4px 6px rgba(0,0,0,0.1);
-  }
-  
-  input[type="text"],
-  textarea {
-    width: calc(100% - 24px);
-    margin-bottom: 20px;
-    padding: 12px;
-    border: 1px solid #ddd;
-    border-radius: 4px;
-    font-family: 'Helvetica', 'Arial', sans-serif;
-    box-shadow: inset 0 1px 2px rgba(0,0,0,0.075);
-    transition: border-color .15s ease-in-out,box-shadow .15s ease-in-out;
-  }
-  
-  input[type="text"]:focus,
-  textarea:focus {
-    border-color: #80bdff;
-    outline: 0;
-    box-shadow: inset 0 1px 2px rgba(0,0,0,0.075), 0 0 8px rgba(128, 189, 255, .6);
-  }
-  
-  button {
-    padding: 10px 15px;
-    color: #fff;
-    background-color: #007bff;
-    border-color: #007bff;
-    border-radius: 4px;
-    font-size: 16px;
-    line-height: 1.5;
-    transition: background-color .15s ease-in-out,box-shadow .15s ease-in-out;
-  }
-  
-  button:hover {
-    background-color: #0069d9;
-    border-color: #0062cc;
-  } */
+/* Apply general styling */
+#postTitle,
+#postContent {
+  width: 100%; /* Full width */
+  padding: 12px 20px; /* Ample padding */
+  margin: 8px 0; /* Add some space between the elements */
+  display: inline-block; /* Allows elements to flow as per normal document flow */
+  border: 1px solid #ccc; /* Subtle border */
+  border-radius: 4px; /* Rounded corners */
+  box-sizing: border-box; /* Border-box sizing to include padding in width */
+}
+
+#postTitle {
+  margin-top: 16px; /* Extra margin-top for the first input */
+}
+
+#postContent {
+  height: 150px; /* Larger height for textarea */
+  resize: vertical; /* Allows vertical resizing */
+}
+
+#postTitle:focus,
+#postContent:focus {
+  outline: none; /* Removes the default focus outline */
+  border-color: #4a90e2; /* Blue border on focus */
+  box-shadow: 0 0 0 2px rgba(74, 144, 226, 0.5); /* Subtle shadow for depth */
+}
+
+.new-post-button {
+  background-color: #f0ad4e; /* Bootstrap 'btn-warning' color */
+  color: white;
+  padding: 12px 20px;
+  margin: 8px 0;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: all 0.2s ease-in-out; /* Smooth transition for hover effects */
+}
+
+.new-post-button:hover {
+  background-color: #ec971f; /* Slightly darker on hover */
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2); /* Shadow for depth */
+}
+
+/* Optional: Add a container around the input elements to control width better */
+.create-post-container {
+  max-width: 768px; /* Set a max-width for the container */
+  margin: auto; /* Center it */
+  padding: 20px; /* Padding around the content */
+  background-color: #ffffff; /* White background */
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+  border-radius: 4px; /* Rounded corners */
+}
