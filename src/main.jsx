@@ -1,10 +1,10 @@
 import React from 'react';
 import ReactDOM from 'react-dom/client';
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
-import SignUp from './SignUp';
-import LoginPage from './LoginPage';
-import HomePage from './HomePage'; // Make sure this import matches your file structure
-import ProfilePage from './ProfilePage';
+import SignUp from './pages/SignUpPage/SignUp';
+import LoginPage from './pages/LoginPage/LoginPage';
+import HomePage from './pages/HomePage/HomePage'; // Make sure this import matches your file structure
+import ProfilePage from './pages/ProfilePage/ProfilePage';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(

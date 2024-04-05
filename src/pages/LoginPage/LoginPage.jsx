@@ -28,7 +28,7 @@ function LoginPage() {
       <div className="welcome-back">
         <h1>Spartan Collab</h1>
         <p>Where Talents Merge, Projects Emerge.</p>
-        <img className="login_logo" src="src/groupworkLogo.png" alt="Collab Logo" />
+        <img className="login_logo" src="src/assets/groupworkLogo.png" alt="Collab Logo" />
       </div>
     </div>
   );
