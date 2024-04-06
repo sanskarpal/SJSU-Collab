@@ -1,7 +1,7 @@
-
-import { Link } from 'react-router-dom';
 import './HomePage.css'; // Make sure to create and import your HomePage.css
 import { useState } from 'react';
+import Header from '../../components/Header/Header.jsx';
+
 
 
 const HomePage = () => {
@@ -23,19 +23,7 @@ const HomePage = () => {
 
   return (
     <div>
-      <header>
-        <img id="homepageLogo" src="https://upload.wikimedia.org/wikipedia/en/thumb/e/ec/San_Jose_State_Spartans_logo.svg/1200px-San_Jose_State_Spartans_logo.svg.png" alt="SJSU Logo" />
-        <h1>SJSU COLLAB</h1>
-        <div className="dropdown">
-          <button className="dropbtn"><img id="profile-image" src = "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRzdWHcffKPDbUMWEVLor3x7sknODQ7SP-Qmw&usqp=CAU"></img></button>
-          <div className="dropdown-content">
-            <p><Link to="/profile">Profile</Link></p>
-            <p><Link to="/login">Sign In</Link></p>
-            <a href="#">Logout</a>
-          </div>
-        </div>
-      </header>
-
+     <Header />
       <main>
         <input
           id="postTitle"

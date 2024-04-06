@@ -6,18 +6,6 @@
     height: 100vh; /* Full height of the viewport */
 }
 
-.profile-page header {
-    background-color: #005A8B;
-    padding: 10px 0;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    position: fixed;
-    width: 100%;
-    top: 0;
-    z-index: 100;
-}
-
 .profile-page .logo {
     display: flex;
     align-items: center;
@@ -58,7 +46,7 @@
 }
 
 .profile-page .profile-container {
-    background-color: #0077B6;
+    background-color: #004880;
     padding: 20px;
     border-radius: 10px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);

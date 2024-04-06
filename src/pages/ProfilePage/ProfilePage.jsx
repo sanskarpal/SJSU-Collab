@@ -1,24 +1,10 @@
-import React from 'react';
-import { Link } from 'react-router-dom';
 import './ProfilePage.css'; // Assuming the CSS file name is ProfilePage.css
+import Header from '../../components/Header/Header.jsx';
 
 function ProfilePage() {
   return (
     <div className="profile-page">
-      <header>
-        <div className="logo">
-          <img src="https://upload.wikimedia.org/wikipedia/en/thumb/e/ec/San_Jose_State_Spartans_logo.svg/1200px-San_Jose_State_Spartans_logo.svg.png" alt="SJSU Logo" />
-          <h1>SJSU COLLAB</h1>
-        </div>
-        <div className="dropdown">
-          <button className="dropbtn"><img id="profile-image" src = "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRzdWHcffKPDbUMWEVLor3x7sknODQ7SP-Qmw&usqp=CAU"></img></button>
-          <div className="dropdown-content">
-            <p><Link to="/">Home</Link></p>
-            <a href="#">Logout</a>
-          </div>
-        </div>
-      </header>
-
+      <Header/>
       <main>
         <div className="profile-container">
           <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRzdWHcffKPDbUMWEVLor3x7sknODQ7SP-Qmw&usqp=CAU" alt="User Avatar" />
