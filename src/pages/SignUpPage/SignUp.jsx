@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import { useState } from 'react';
 import { Link } from 'react-router-dom'; // Import the Link component
 import './SignUp.css'; // Make sure the path is correct based on where you place your CSS file
 
