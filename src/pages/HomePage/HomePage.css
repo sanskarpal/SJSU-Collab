@@ -126,56 +126,168 @@ main{
     background-color: #f4f4f4;
   }
   
-/* Apply general styling */
 #postTitle,
 #postContent {
-  width: 100%; /* Full width */
-  padding: 12px 20px; /* Ample padding */
-  margin: 8px 0; /* Add some space between the elements */
-  display: inline-block; /* Allows elements to flow as per normal document flow */
-  border: 1px solid #ccc; /* Subtle border */
-  border-radius: 4px; /* Rounded corners */
-  box-sizing: border-box; /* Border-box sizing to include padding in width */
+  width: 100%; 
+  padding: 12px 20px; 
+  margin: 8px 0; 
+  display: inline-block; 
+  border: 1px solid #ccc; 
+  border-radius: 4px; 
+  box-sizing: border-box; 
 }
 
 #postTitle {
-  margin-top: 16px; /* Extra margin-top for the first input */
+  margin-top: 16px; 
 }
 
 #postContent {
-  height: 150px; /* Larger height for textarea */
-  resize: vertical; /* Allows vertical resizing */
+  height: 150px; 
+  resize: vertical; 
 }
 
 #postTitle:focus,
 #postContent:focus {
-  outline: none; /* Removes the default focus outline */
-  border-color: #4a90e2; /* Blue border on focus */
-  box-shadow: 0 0 0 2px rgba(74, 144, 226, 0.5); /* Subtle shadow for depth */
+  outline: none; 
+  border-color: #4a90e2; 
+  box-shadow: 0 0 0 2px rgba(74, 144, 226, 0.5); 
 }
 
 .new-post-button {
-  background-color: #f0ad4e; /* Bootstrap 'btn-warning' color */
+  background-color: #f0ad4e; 
   color: white;
   padding: 12px 20px;
   margin: 8px 0;
   border: none;
   border-radius: 4px;
   cursor: pointer;
-  transition: all 0.2s ease-in-out; /* Smooth transition for hover effects */
+  transition: all 0.2s ease-in-out; 
 }
 
 .new-post-button:hover {
-  background-color: #ec971f; /* Slightly darker on hover */
-  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2); /* Shadow for depth */
+  background-color: #ec971f; 
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2); 
 }
 
-/* Optional: Add a container around the input elements to control width better */
 .create-post-container {
-  max-width: 768px; /* Set a max-width for the container */
-  margin: auto; /* Center it */
-  padding: 20px; /* Padding around the content */
-  background-color: #ffffff; /* White background */
-  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Subtle shadow */
-  border-radius: 4px; /* Rounded corners */
+  max-width: 768px; 
+  margin: auto; 
+  padding: 20px; 
+  background-color: #ffffff; 
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); 
+  border-radius: 4px; 
+}
+
+.reply {
+  margin-top: 10px;
+  padding: 10px;
+  background: #f9f9f9;
+  border-left: 3px solid #f0ad4e;
+  background-color: #f8f8f8; 
+  padding: 10px; 
+  border-left: 4px solid #f0ad4e; 
+  margin-bottom: 10px; 
+  border-radius: 4px; 
+}
+
+.reply-input[type="text"] {
+  width: calc(100% - 90px); 
+  padding: 8px;
+  margin-right: 5px;
+  display: inline-block;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+  flex-grow: 1; 
+  padding: 10px 15px; 
+  margin-right: 8px; 
+  border: none; 
+  border-radius: 4px; 
+  font-size: 16px; 
+}
+
+.reply-button {
+  width: 80px;
+  padding: 8px;
+  background-color: #f0ad4e;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: all 0.2s ease-in-out;
+  padding: 10px 15px; 
+  font-size: 16px; 
+  line-height: 1; 
+  border: none; 
+  border-radius: 4px; 
+  background-color: #f0ad4e; 
+  color: white; 
+  cursor: pointer; 
+  transition: background-color 0.3s ease; 
+}
+
+.reply button:hover {
+  background-color: #ec971f;
+}
+
+.new-post-button, .reply button {
+  background-color: #f0ad4e;
+  color: white;
+  padding: 10px 20px;
+  font-size: 16px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  margin-bottom: 20px;
+  display: block;
+  width: auto;
+  text-align: center;
+  margin-left: auto;
+  margin-right: auto;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+}
+
+.new-post-button:hover, .reply button:hover {
+  background-color: #ec971f;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+}
+
+.replies {
+  margin-top: 20px;
+  border-top: 1px solid #eee;
+  padding-top: 10px;
+  background-color: #ffffff; 
+  border-top: 1px solid #eee; 
+  border-radius: 4px; 
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); 
+  padding: 16px; 
+  margin-top: 20px; 
+}
+
+.reply-input-container {
+  display: flex;
+  align-items: center;
+  margin-top: 10px;
+  background-color: white; 
+  padding: 8px; 
+  border-radius: 4px; 
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); 
+}
+
+.reply-button:hover {
+  background-color: #ec971f; 
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2); 
+}
+
+
+.reply-input::placeholder,
+.reply-button::placeholder {
+  color: #aab7c4; 
+  opacity: 1; 
+}
+
+.reply-input:focus,
+.reply-button:focus {
+  border-color: #4a90e2; 
+  box-shadow: 0 0 0 2px rgba(74, 144, 226, 0.5); 
 }
