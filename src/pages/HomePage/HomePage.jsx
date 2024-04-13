@@ -19,28 +19,31 @@ const HomePage = () => {
   ]);
 
   const [newPost, setNewPost] = useState({ title: '', content: '' });
-  const [newReply, setNewReply] = useState('');
+  const [replyTexts, setReplyTexts] = useState(posts.map(() => ''));
 
   const handleCreatePost = () => {
     if (newPost.title && newPost.content) {
       setPosts([...posts, { ...newPost, replies: [] }]);
-      setNewPost({ title: '', content: '' }); // Reset new post state
+      setNewPost({ title: '', content: '' });
+      setReplyTexts([...replyTexts, '']); // Add a new reply state for the new post
     }
   };
 
-  const handleAddReply = (postIndex, replyContent) => {
-    if (replyContent) {
+  const handleAddReply = (postIndex, replyText) => {
+    if (replyText.trim()) {
       const updatedPosts = posts.map((post, index) => {
         if (index === postIndex) {
           return {
             ...post,
-            replies: [...post.replies, replyContent],
+            replies: [...post.replies, replyText],
           };
         }
         return post;
       });
       setPosts(updatedPosts);
-      setNewReply(''); // Reset the reply input
+      const newReplyTexts = [...replyTexts];
+      newReplyTexts[postIndex] = ''; // Reset the reply input for this post only
+      setReplyTexts(newReplyTexts);
     }
   };
 
@@ -76,15 +79,20 @@ const HomePage = () => {
                 </div>
               ))}
               <input
-                className = "reply-input"
+                className="reply-input"
                 type="text"
                 placeholder="Write a reply..."
-                value={newReply}
-                onChange={(e) => setNewReply(e.target.value)}
+                value={replyTexts[postIndex]}
+                onChange={(e) => {
+                  const newReplyTexts = [...replyTexts];
+                  newReplyTexts[postIndex] = e.target.value;
+                  setReplyTexts(newReplyTexts);
+                }}
               />
-              <button 
-              className = "reply-button"
-              onClick={() => handleAddReply(postIndex, newReply)}>
+              <button
+                className="reply-button"
+                onClick={() => handleAddReply(postIndex, replyTexts[postIndex])}
+              >
                 Reply
               </button>
             </div>
