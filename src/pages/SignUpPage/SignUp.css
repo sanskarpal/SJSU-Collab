@@ -6,32 +6,31 @@
   }
   
   html, body {
-    height: 100%; /* Make sure the html and body cover the full height of the viewport */
+    height: 100%; 
   }
   
   body {
-    background-color: white; /* Set the background color of the page to white */
+    background-color: white; 
     justify-content: center;
-    align-items: center; /* Center children elements */
+    align-items: center; 
     font-family: 'Arial', sans-serif;
   }
   
   .signup-page {
     display: flex;
-    flex-direction: column; /* Stack children vertically */
-    justify-content: center; /* Center vertically */
-    align-items: center; /* Center horizontally */
+    flex-direction: column; 
+    justify-content: center; 
+    align-items: center; 
     min-height: 100vh;
   }
   
-  /* Adjust the .signup-logo to make sure it's centered above the form */
+
   .signup-logo {
-    width: 150px; /* Adjust the width as needed */
+    width: 150px; 
     height: auto;
-    margin-bottom: 50px; /* Increase the space below the logo if needed */
+    margin-bottom: 50px; 
   }
   
-  /* Styling for the container of the sign-up form */
   .signup-container {
     display: flex;
     flex-direction: column;
@@ -44,21 +43,18 @@
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
   }
   
-  /* Form heading styles */
   .signup-form h2 {
     font-size: 24px;
     color: #333;
     margin-bottom: 10px;
   }
   
-  /* Paragraph styles */
   .signup-form p {
     font-size: 16px;
     color: #666;
     margin-bottom: 30px;
   }
   
-  /* Input field styles */
   .signup-form input {
     width: calc(100% - 20px);
     padding: 10px;
@@ -68,7 +64,6 @@
     font-size: 16px;
   }
   
-  /* Button styles */
   .signup-form button {
     width: calc(100% - 20px);
     padding: 10px;
@@ -85,16 +80,14 @@
     background-color: #0056b3;
   }
   
-  /* Link styles */
   .signup-form a {
     color: #007bff;
     text-decoration: none;
     font-size: 14px;
   }
   
-  /* Style for the logo at the top of the sign-up form */
 .signup-logo {
-  width: 120px; /* Set the width as desired */
-  height: auto; /* Maintain aspect ratio */
-  margin-bottom: 30px; /* Space between the logo and the form */
+  width: 120px; 
+  height: auto; 
+  margin-bottom: 30px; 
 }
