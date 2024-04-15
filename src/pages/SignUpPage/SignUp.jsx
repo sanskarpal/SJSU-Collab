@@ -1,36 +1,15 @@
 import { useState } from 'react';
 import { Link } from 'react-router-dom'; // Import the Link component
 import './SignUp.css'; // Make sure the path is correct based on where you place your CSS file
-import axios from 'axios';
 
 function SignUp() {
   const [email, setEmail] = useState('');
   const [password, setPassword] = useState('');
-
-  const handleSubmit = async (event) => {
+  const handleSubmit = (event) => {
     event.preventDefault();
     console.log('Sign Up with:', email, password);
-    try {
-      const response = await axios.post('http://localhost:8081/api/users/signup', {
-        email: email,
-        password: password
-      });
-
-      // Handle response here. For example:
-      console.log(response.data);
-      alert('Account created successfully');
-
-      // Redirect user to another page or clear form, etc.
-      // setEmail('');
-      // setPassword('');
-
-    } catch (error) {
-      // Handle error here. For example:
-      console.error('There was an error!', error);
-      alert('Failed to create account');
-    }
+    // Here you will add the code to handle the sign-up logic
   };
-
   return (
     <div className="signup-page">
       <img
@@ -65,5 +44,4 @@ function SignUp() {
     </div>
   );
 }
-
 export default SignUp;
